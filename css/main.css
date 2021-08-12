@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3A4653;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+p {
+  font-size: 18px;
+  text-indent: 4px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+small {
+    font-size: 12px;
+    color: #ededed;
+}
+
+.main-header {
+    background-color: #ededed;
+    padding: 30px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all .3s;
+}
+.change-header {
+    padding: 10px 40px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 40px;
+    color: #3A4653;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 70, 83, 0.99);
+    z-index: 9998;
+    display: none;
+}
+
+nav .nav-links-holder {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    margin-bottom: 30px;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    font-size: 40px;
+    color: #ededed;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #4241A4;
+    text-decoration: none;
+
+
+}
+.nav-button {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .3s;
+}
+.change-header .nav-button {
+    top: 20px;
+}
+
+.nav-button span {
+    width: 30px;
+    height: 3px;
+    background-color: #3A4653;
+    display: block;
+    transition: all .3s;
+}
+.white span {
+    background-color: #fff;
+}
+
+.nav-button span:nth-child(2) {
+    margin: 5px 0;
+}
+
+#home, #about, #gallery, #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+#home {
+    background-image: url("../img/men.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#home h2 {
+    margin-top: 100px;
+    color: #fff;
+    background-color: rgba(66, 129, 164, 0.1);
+    padding: 10px;
+    font-family: 'Shadows Into Light', cursive;
+}
+#home, #gallery {
+    background-color: #3A4653;
+}
+
+#about p {
+    text-align: center;
+}
+
+#gallery h2 {
+    color: #ededed;
+}
+
+#gallery .img-holder {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border: 2px solid #3A4653;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3A4653;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.form-btn {
+    width: 140px;
+    height: 40px;
+    background-color: #4281A4;
+    color: #ededed;
+    border-radius: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-btn:hover {
+    background-color: #3A4653;
+    color: #ededed;
+}
+
+.btn:active:focus {
+    outline: none;
+}
+
+.main-footer {
+    padding: 37px 0;
+    background-color: #3A4653;
+    text-align: center;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
